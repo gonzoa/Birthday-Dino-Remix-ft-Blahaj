@@ -1,0 +1,81 @@
+body{
+  background-image: url(hbd.gif);
+  background-size: cover;
+}
+h1{
+  background: #121FCF;
+background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, #121FCF 58%, #00FF00 69%, #CF1512 100%);
+background: -moz-repeating-radial-gradient(circle farthest-corner at center center, #121FCF 58%, #00FF00 69%, #CF1512 100%);
+background: repeating-radial-gradient(circle farthest-corner at center center, #121FCF 58%, #00FF00 69%, #CF1512 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 50pt;
+}
+
+p{
+  color:white;
+}
+
+.game{
+  
+  width: 500px;
+  height:200px;
+  border: 1px solid black;
+  margin: auto;
+  background-image: url("city.gif");
+}
+
+#blahaj{
+  width:60px;
+  height: 60px;
+  background-image: url(bh.png);
+  background-size: 60px 60px;
+  background-repeat: none;
+}
+#blahaj{
+  position: relative;
+  top:150px;
+  
+}
+
+.jump{
+  animation:jump 0.3s linear;
+}
+
+@keyframes jump{
+  0%{
+    top: 150px;
+  }
+  30%{
+    top:160px;
+  }
+  50%{
+    top: 50px;
+  }
+  80%{
+    top:100px;
+  }
+}
+
+#obstacle{
+  width:40px;
+  height: 30px;
+  position: relative;
+  top:110px;
+  left:465px;
+
+  background-image: url(cake.jpg);
+  background-size: 50px 50px;
+
+  animation: block 2s infinite linear;
+}
+
+@keyframes block{
+0%{
+  left:465px;
+}
+100%{
+  left:-10px;
+}
+}
